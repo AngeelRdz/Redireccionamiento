@@ -5,13 +5,20 @@
 <title>Ejemplo</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 	<script>
-		
-		 timercito = setTimeout(function(){
-				window.location.assign("http://www.google.com.mx")
-			}, 5000);
+		function redireccionar(){
+			window.location.assign("http://www.google.com.mx");
+		}
+		 /*timercito = setTimeout(function(){
+				
+			}, 5000);*/
 	</script>
 
 	<style>
+	body{
+		background: url(img/background.png);
+    	background-size: cover;
+    	background-repeat: no-repeat;
+	}
 		div.imagen{
 		    max-width: 100%;
 			  overflow: hidden;
@@ -24,7 +31,7 @@
 
 		div.imagen img {
 			  display: block;
-			  max-width: none !important;
+			  max-width: none !important;			  
 			}
 	</style>
 
@@ -32,8 +39,11 @@
 <body>		
 	
 			<div class="imagen" style="width: 500px;">
-				<img style="width: 100%;" src="img/alcatel_hero_2c.png">
+				<img style="width: 100%;" src="img/portable_computer_256.png">
 			</div>
+			<center>
+				<button onclick="redireccionar();" style="background:url(img/botonaceptar.png);width: 150px;height: 52px;background-size: cover;"></button>
+			</center>
 			
 			
 </body>
